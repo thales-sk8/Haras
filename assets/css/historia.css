@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Arbutus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.historia {
+  margin-bottom: 50px;
+}
+
+.titulo__historia {
+  padding-top: 20px;
+  font-family: "Arbutus", cursive;
+  font-size: 2.5rem;
+  color: #875a42;
+  text-align: center;
+}
+
+.historia__img {
+  width: 750px;
+}
+
+.historia__bloco {
+  margin: 50px 5% 0 5%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.textos__bloco {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.texto__historia {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.texto__historia--mid {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 1.75rem;
+  font-size: 1.15rem;
+  margin-bottom: 24px;
+  margin: 0 5% 24px 5%;
+}
+
+.textos__bloco--extra {
+  padding-right: 20px;
+}
+
+.texto__historia--extra {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 0px) {
+  .historia__bloco {
+    margin: 50px 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .historia__img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .textos__bloco {
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .texto__bloco--mid {
+    width: 100%;
+  }
+
+  .textos__bloco--extra {
+    margin-top: -26px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .texto__historia {
+    font-size: 0.95rem;
+  }
+
+  .texto__historia--mid {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 400;
+    line-height: 1.75rem;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    margin: 0 5% 24px 5%;
+  }
+
+  .texto__historia--extra {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .historia__bloco {
+    margin: 50px 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .historia__img {
+    width: 350px;
+  }
+
+  .textos__bloco {
+    margin-top: 0px;
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  .textos__bloco--extra {
+    margin-top: 0px;
+    padding-right: 20px;
+    width: 50%;
+  }
+
+  .texto__historia {
+    font-size: 1.15rem;
+  }
+
+  .texto__historia--mid {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 400;
+    line-height: 1.75rem;
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+    margin: 0 5% 24px 5%;
+  }
+
+  .texto__historia--extra {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .historia__img {
+    width: 600px;
+  }
+
+  .texto__historia {
+    font-size: 1.15rem;
+  }
+
+  .texto__historia--extra {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .historia__img {
+    width: 750px;
+  }
+}

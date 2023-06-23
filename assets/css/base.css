@@ -1,0 +1,95 @@
+body {
+  background-color: #090003;
+}
+
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.989);
+  z-index: 2000;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 40px 40px;
+  min-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal-content {
+  animation: modal 0.3s;
+}
+
+.fechar {
+  position: absolute;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: #875a42;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fechar:hover {
+  background-color: #583623;
+  color: #ffffff;
+}
+
+.modal.mostrar {
+  display: flex;
+}
+
+.popimg {
+  width: 60%;
+  height: auto;
+  justify-content: middle;
+  align-items: center;
+}
+
+.modal-content h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: middle;
+  align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .modal-content h3 {
+    font-size: 2.5rem;
+  }
+}

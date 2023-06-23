@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  animation-name: aparecer;
+  animation-duration: 3s; /* Duração da animação */
+  animation-fill-mode: forwards;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  background-image: url(/assets/img/IMG-20230327-WA0061.jpg);
+  animation-name: aparecer;
+  animation-duration: 3s; /* Duração da animação */
+  animation-fill-mode: forwards;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  font-size: 25px;
+  background-color: rgba(2, 204, 255, 0.493);
+  height: 70px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  height: 50px;
+  font-size: 36px;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.cabecalho-logo {
+  height: 7px;
+  margin-top: 10px;
+}
+
+.cabecalho-menu-item {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  animation-name: aparecer;
+  animation-duration: 3s; /* Duração da animação */
+  animation-fill-mode: forwards;
+}
+
+.conteudo-frases {
+  position: fixed;
+  bottom: 75px;
+  width: 100%;
+  padding: 0 80% 0 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 23px;
+  font-family: fantasy;
+}
+
+.conteudo-frases-item {
+  color: black;
+  text-shadow: 0 0 2px white;
+  font-family: "Bebas Neue", cursive;
+}
+
+.roda-pe {
+  position: fixed;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 25px;
+  opacity: -1;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.redes-sociais--bloco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.icone-mail {
+  height: 40px;
+  margin-right: -15px;
+}
+
+.social-texto {
+  font-family: "Montsserat", cursive;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  animation-name: aparecer;
+  animation-duration: 3s; /* Duração da animação */
+  animation-fill-mode: forwards;
+}
+
+.google-analytics {
+  display: none;
+  font-size: 3px;
+}
+
+
+@media screen and (max-width: 465px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.504);
+    height: 50px;
+  }
+
+  .cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    height: 8px;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .cabecalho-logo {
+    height: 70px;
+    margin-left: 0px;
+    margin-top: 81px;
+  }
+
+  .body {
+    min-height: 100vh;
+  }
+
+  .social-texto {
+    font-family: "Bebas Neue", cursive;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-style: italic;
+    animation-name: aparecer;
+    animation-duration: 3s; /* Duração da animação */
+    animation-fill-mode: forwards;
+  }
+
+  .roda-pe {
+    background-color: rgba(0, 0, 0, 0.504);
+    width: 100%;
+    padding: 0;
+    opacity: 1;
+  }
+
+  .google-analytics {
+    display: none;
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.505);
+    height: 50px;
+  }
+
+  .cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    height: 50px;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .cabecalho-logo {
+    height: 180px;
+    margin-left: 300px;
+    margin-top: 750px;
+  }
+
+  .conteudo-frases {
+    position: fixed;
+    bottom: 75px;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 23px;
+    font-family: fantasy;
+  }
+
+  .redes-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+  }
+
+  .redes-sociais--bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .icone {
+    height: 35px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  .icone-mail {
+    height: 35px;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 4px;
+  }
+
+  .social-texto {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 21px;
+    margin-top: 5px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    justify-content: center;
+    animation-name: aparecer;
+    animation-duration: 3s; /* Duração da animação */
+    animation-fill-mode: forwards;
+  }
+
+  .google-analytics {
+    display: none;
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 30px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 20px;
+  }
+
+  .cabecalho-menu {
+    display: flex;
+    height: 50px;
+    font-size: 36px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .cabecalho-logo {
+    height: 180px;
+    position: fixed;
+    top: -670px;
+    margin-left: 467px;
+    opacity: 1;
+  }
+
+  .conteudo-frases {
+    position: fixed;
+    bottom: 75px;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 23px;
+    font-family: fantasy;
+  }
+
+  .roda-pe {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 25px;
+    opacity: -1;
+  }
+
+  .social-texto {
+    font-family: "Bebas Neue", cursive;
+    font-size: 36px;
+    font-style: italic;
+    color: #ffffff;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: aparecer;
+    animation-duration: 3s; /* Duração da animação */
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .google-analytics {
+    display: none;
+    font-size: 3px;
+  }
+}
